@@ -1,0 +1,189 @@
+.icon{
+    display: none;
+    height: 49px;
+ }
+ 
+.full{
+    height: 60px;
+}
+
+ @media only screen and (max-width: 1000px){ 
+    .full{
+      display: none;
+    }
+ 
+    .icon{
+      display: block;
+    }
+ }
+
+.font {
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.green {
+    color:#2f9583;
+}
+
+.greenborder{
+    border-color: #2f9583 !important;
+    background-color: #2f9583 !important;
+    border-width: 0px;
+    }
+
+.greenimportant{
+    color: #2f9583 !important;
+}
+
+.greenbg{
+    background-color: #2f9583;
+}
+
+.orange{
+    color: #e98b2d;
+}
+
+.orangebg{
+    background-image: url('../images/AboutMebackground.png');
+    /* background-color: #e98b2d; */
+}
+
+.mainimage{
+    /* position:absolute; */
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100vw;
+}
+
+.home{
+    position:relative;
+    z-index: -1;
+    max-height: 100vw;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+
+.bar{
+    height: 20px;
+    background-color: #2f9583
+}
+
+.mainlogo{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    max-width: 40%;
+}
+
+.container{
+    width: 100%
+}
+
+.aboutmeImage{
+    max-height: 350px;
+    border-radius: 50%;
+    max-width: 100%;
+    margin-left: 20%;
+}
+
+.roundedcorners{
+    border-radius: 20px;
+}
+
+.textoverflow{
+    text-overflow: ellipsis;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1350px){ 
+    .aboutmeImage{
+        max-height: 350px;
+        border-radius: 50%;
+        max-width: 100%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 770px){ 
+    .aboutmeImage{
+        display: none;
+    }
+
+    .smallertext{
+        font-size:14px;
+    }
+
+    .emptybox{
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1110px){ 
+    .smallertext{
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 950px){ 
+    .smallertext{
+        font-size: 12px
+    }
+}
+
+.twentypixelfont{
+    font-size:20px;
+
+}
+
+.thirtypixelfont{
+    font-size:30px;
+}
+
+@media only screen and (max-width: 800px){ 
+    .thirtypixelfont{
+        font-size: 24px
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.mainportfolioimage{
+    width: 100%;
+    height: 100%;
+}
+
+.auxportfolioimage{
+    width: 100%;
+    height: 100%;
+}
+
+.mainportfoliologo{
+    position: absolute;
+    bottom: 40%;
+    left: 17.5%;
+    max-width: 65%;
+}
+
+.grayscale:hover{
+    filter: grayscale(100%);
+}
+
+.h100{
+    height:100%
+}
+
+.w100{
+    width:100%
+}
