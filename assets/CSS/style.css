@@ -4,7 +4,7 @@
  }
  
 .full{
-    height: 60px;
+    height: 50px;
 }
 
  @media only screen and (max-width: 1000px){ 
@@ -166,7 +166,7 @@ a:hover{
 
 .auxportfolioimage{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .mainportfoliologo{
@@ -175,7 +175,12 @@ a:hover{
     left: 17.5%;
     max-width: 65%;
 }
-
+.auxportfoliologo{
+    position: absolute;
+    bottom: 35%;
+    left: 25%;
+    max-width: 50%;
+}
 .grayscale:hover{
     filter: grayscale(100%);
 }
