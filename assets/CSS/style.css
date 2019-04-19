@@ -7,6 +7,15 @@
     height: 50px;
 }
 
+.icon.scroll{
+    display: none;
+    height: 30px;
+ }
+ 
+.full.scroll{
+    height: 30px;
+}
+
  @media only screen and (max-width: 1000px){ 
     .full{
       display: none;
@@ -37,8 +46,24 @@
     color: #2f9583 !important;
 }
 
+#graphicdesign{
+    position:absolute;
+    bottom: 48px
+}
+
 .greenbg{
     background-color: #2f9583;
+}
+
+.greenborderLM{
+    border-color: #2f9583;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.greenborderLM:hover{
+    background-color: #2f9583;
+    color: white
 }
 
 .orange{
@@ -48,6 +73,10 @@
 .orangebg{
     background-image: url('../images/AboutMebackground.png');
     /* background-color: #e98b2d; */
+}
+
+.orangehover:hover{
+    color: #e98b2d;
 }
 
 .mainimage{
@@ -64,8 +93,27 @@
 }
 
 .navbar{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
+}
+
+.dropdown{
+    position: absolute;
+    display: none;
+}
+
+.dropdownparent:hover .dropdown{
+    display:block
+}
+
+.scroll{
+    background-color: white;
+    transition: 750ms ease-in-out;
+}
+
+.scrollImg{
+    height:25px !important;
+    transition: 750ms;
 }
 
 .bar{
@@ -75,7 +123,7 @@
 
 .mainlogo{
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     left: 30%;
     max-width: 40%;
 }
@@ -155,6 +203,11 @@ a{
     text-decoration: none;
 }
 
+.nodecoration{
+    text-decoration: none;
+    list-style-type: none;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -181,6 +234,14 @@ a:hover{
     left: 25%;
     max-width: 50%;
 }
+
+.auxportfoliologo-ssl{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    max-width: 50%;
+}
+
 .grayscale:hover{
     filter: grayscale(100%);
 }
@@ -195,4 +256,24 @@ a:hover{
 
 .linkimg{
     height: 40px;
+}
+
+::placeholder {
+    color: #2f9583
+}
+
+.submitbttn{
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+}
+
+.submitbttn:hover{
+    color: #e98b2d;
+    background-color: white;
+}
+
+.pointer{
+    cursor: pointer
 }

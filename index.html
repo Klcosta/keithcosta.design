@@ -7,9 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/clo4ucy.css">
     <link href="assets/CSS/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="assets/Images/favicon.png">
@@ -21,66 +28,90 @@
 
     <!-- HOME PAGE -->
 
-    <nav class="header navbar navbar-expand-sm navbar-dark pb-1">
-        <img src="assets/images/logo(horizontal).png" class="full">
-        <img src="assets/images/icon.png" class="icon">
-        <button class="navbar-toggler greenborder" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="navbar" class="header fixed-top navbar navbar-expand-sm navbar-dark p-1">
+        <a href="#home">
+            <img src="assets/images/logo(horizontal).png" class="full logo">
+            <img src="assets/images/icon.png" class="icon logo">
+        </a>
+        <button id="white" class="navbar-toggler greenborder" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon greenborder greenimportant"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item mx-3">
                     <a class="nav-link font" href="#whatido">
-                        <div class="green">What I Do</div>
+                        <div class="green orangehover">What I Do</div>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-3 dropdownparent">
                     <a class="nav-link font" href="#webdevelopement">
-                        <div class="green">Portfolio</div>
+                        <div class="green orangehover">Portfolio</div>
                     </a>
+                    <ul class="dropdown font green nodecoration p-2 rounded-bottom">
+                        <li>
+                            <a class="nodecoration" href="#webdevelopement">
+                                <div class="font green mb-1 orangehover"> Web Developement</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#graphicdesign">
+                                <div class="font green mb-1 orangehover"> Graphic Design </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#webdevelopement">
+                                <div class="font green orangehover"> Both </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-3">
                     <a class="nav-link font" href="#contact">
-                        <div class="green">Contact</div>
+                        <div class="green orangehover">Contact</div>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="home">
+    <div id="home" class="home">
         <img class="mainimage" src="assets/images/keith Costa.jpg">
         <img class="mainlogo" src="assets/images/logo(full).png">
-        <div class="bar"></div>
     </div>
 
     <!-- WHAT I DO -->
-
-    <div id="whatido" class="container-fluid py-3 px-5 orangebg">
+    <div id="whatido" class="bar"></div>
+    <div class="container-fluid py-3 px-5 orangebg">
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-md-pull-4 bg-white py-1 font green roundedcorners my-4 px-4">
+            <div class="col-sm-12 col-md-8 col-md-pull-4 bg-white py-1 font green rounded my-4 px-4">
                 <div class="row pt-1 pb-1 twentypixelfont">
                     WHAT I DO
                 </div>
                 <div class="row textoverflow smallertext">
-                        Thank you for visiting my portfolio.
-                        <br><br>
-                        My name is Keith Costa. I have a genuine love for continued growth. 
-                        I am constantly searching for new ways to continue improving myself and my craft.
-                        I have always been very artistically inclined. 
-                        As a child my notebooks were filled with doodles and sketches. 
-                        I have been working for several years to develop this passion and grow as a designer and web developer.
-                        I cherish the challenges of creating new forms of communication that transcend language and creating a more aesthetically pleasing world.
-                        I am well versed in Adobe Photoshop Illustrator and InDesign which I most commonly use.
-                        I have been honing my skills with these programs through personal projects and formal education. 
-                        I also have experience with Adobe Aftereffects and Premiere. 
-                        It has helped me develop new ways of communicating and expressing myself.
+                    Thank you for visiting my portfolio.
+                    <br><br>
+                    My name is Keith Costa. I have a genuine love for continued growth.
+                    I am constantly searching for new ways to continue improving myself and my craft.
+                    I have always been very artistically inclined.
+                    As a child my notebooks were filled with doodles and sketches.
+                    I have been working for several years to develop this passion and grow as a designer and web
+                    developer.
+                    I cherish the challenges of creating new forms of communication that transcend language and creating
+                    a more aesthetically pleasing world.
+                    I am well versed in Adobe Photoshop Illustrator and InDesign which I most commonly use.
+                    I have been honing my skills with these programs through personal projects and formal education.
+                    I also have experience with Adobe Aftereffects and Premiere.
+                    It has helped me develop new ways of communicating and expressing myself.
                 </div>
                 <a href="WhatIdo.html">
-                    <div class="row pt-3 pb-0 twentypixelfont green">
-                        LEARN MORE
+                    <div class="row pt-3 pb-1 twentypixelfont green">
+                        <div class="col-6 col-sm-7 col-md-7 col-lg-8"></div>
+                        <div class="col-6 col-sm-5 col-md-5 col-lg-4 rounded text-center greenborderLM">
+                            LEARN MORE
+                        </div>
                     </div>
+                    <div id="webdevelopement"></div>
                 </a>
             </div>
             <div class="col-sm-12 col-md-4 col-md-push-8 py-4 px-auto emptybox">
@@ -91,17 +122,19 @@
 
     <!-- WEB DEVELOPEMENT PORTFOLIO -->
 
-    <div id="webdevelopement" class="container-fluid p-0">
+    <div class="container-fluid p-0">
         <div class="row w100 m-0">
             <div class="col-sm-12 order-sm-1 order-md-2 col-md-5 p-0 ">
                 <div class="row w100 m-0">
-                    <div class="col-12 py-2 px-0 text-center font thirtypixelfont greenbg text-white">
-                        WEB DEVELOPEMENT
-                    </div>
+                    <a class="w100" href=#>
+                        <div class="col-12 py-2 px-0 text-center font thirtypixelfont greenbg text-white grayscale">
+                            WEB DEVELOPMENT
+                        </div>
+                    </a>
                 </div>
                 <div class="row w100 m-0">
                     <div class="col-12 p-0 grayscale">
-                        <a href="https://klcosta.github.io/Word-Guess-Game/"  target="_blank">
+                        <a href="https://klcosta.github.io/Word-Guess-Game/" target="_blank">
                             <img class="auxportfolioimage" src="assets/images/Guessthewordbg.png">
                         </a>
                         <img class="auxportfoliologo" src="assets/images/WorldCapitalGuessGameLogo.png">
@@ -115,13 +148,54 @@
                         <img class="auxportfoliologo" src="assets/images/USHistoryTriviaLogo.png">
                     </div>
                 </div>
+                <div id="graphicdesign"></div>
             </div>
             <div class="col-sm-12 order-sm-2 order-md-1 col-md-7 p-0 grayscale w100 ">
                 <div class="h100">
-                    <a href="https://klcosta.github.io/souscheckbackupv2/" target="_blank">
+                    <a href="https://klcosta.github.io/sousChef/index.html" target="_blank">
                         <img class="mainportfolioimage w100" src="assets/images/SousChefbg.jpg">
                     </a>
                     <img class="mainportfoliologo" src="assets/images/SousChefLogo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRAPHIC DESIGN PORTFOLIO -->
+
+    <div class="container-fluid p-0">
+        <div class="row w100 m-0">
+            <div class="col-sm-12 order-sm-1 col-md-5 p-0 ">
+                <div class="row w100 m-0">
+                    <a class="w100" href=#>
+                        <div class="col-12 py-2 px-0 text-center font thirtypixelfont greenbg text-white grayscale">
+                            GRAPHIC DESIGN
+                        </div>
+                    </a>
+                </div>
+                <div class="row w100 m-0">
+                    <div class="col-12 p-0 grayscale">
+                        <a href="#" target="_blank">
+                            <img class="auxportfolioimage" src="assets/images/winningfunnelbg.jpg">
+                        </a>
+                        <img class="auxportfoliologo" src="assets/images/winningfunnellogo.png">
+                    </div>
+                </div>
+                <div class="row w100 m-0">
+                    <div class="col-12 p-0 grayscale">
+                        <a href="#/" target="_blank">
+                            <img class="auxportfolioimage" src="assets/images/sslbg.jpg">
+                        </a>
+                        <img class="auxportfoliologo-ssl" src="assets/images/ssllogo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 order-sm-2 col-md-7 p-0 grayscale w100 ">
+                <div class="h100">
+                    <a href="#" target="_blank">
+                        <img class="mainportfolioimage w100" src="assets/images/stsbg.png">
+                    </a>
+                    <img class="mainportfoliologo" src="assets/images/stslogo.png">
                 </div>
             </div>
         </div>
@@ -135,22 +209,27 @@
                 Contact
             </div>
         </div>
-        <div class="row w100 m-0">
+        <div id="contactform" class="row w100 m-0">
             <div class="col-md-6 col-sm-12">
                 <form>
-                    <input class="border-0 rounded font green p-2 w100 my-1" type="text" id="name" name="name" placeholder="Your name...">
-                    <input class="border-0 rounded font green p-2 w100 mb-2 mt-1" type="text" id="email" name="email" placeholder="example@gmail.com">
+                    <input class="border-0 rounded font green p-2 w100 my-1" type="text" id="name" name="name"
+                        placeholder="Your name...">
+                    <input class="border-0 rounded font green p-2 w100 mb-2 mt-1" type="text" id="email" name="email"
+                        placeholder="example@gmail.com">
                 </form>
             </div>
             <div class="col-md-6 col-sm-12">
                 <form>
-                    <textarea class="border-0 rounded font green pb-2 pt-2 w100 mt-1" rows="3" type="text" id="message" name="message" placeholder="What can I help you with?"></textarea>
+                    <textarea class="border-0 rounded font green p-2 pt-2 w100 mt-1" rows="3" type="text" id="message"
+                        name="message" placeholder="What can I help you with?"></textarea>
                 </form>
             </div>
         </div>
-        <div class="row w100">
-            <div class="col-12 ml-3 mt-2 font text-white twentypixelfont">
-                SUBMIT
+        <div id="submitrow" class="row w100">
+            <div class="col-5 col-sm-3 col-md-2 col-lg-2">
+                <div id="submit" class="ml-3 mt-2 font pointer twentypixelfont text-center rounded submitbttn">
+                    SUBMIT
+                </div>
             </div>
         </div>
     </div>
@@ -170,5 +249,9 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/java.js"></script>
+
 </body>
+
 </html>
