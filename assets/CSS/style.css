@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 .icon{
     display: none;
     height: 49px;
@@ -26,11 +28,25 @@
     }
  }
 
+/* FONT */
+
 .font {
     font-family: montserrat, sans-serif;
     font-weight: 600;
     font-style: normal;
 }
+
+.fontLight {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.justify{
+    text-align:justify;
+}
+
+/* COLORS */
 
 .green {
     color:#2f9583;
@@ -46,10 +62,11 @@
     color: #2f9583 !important;
 }
 
-#graphicdesign{
+
+/* #whatido{
     position:absolute;
     bottom: 48px
-}
+} */
 
 .greenbg{
     background-color: #2f9583;
@@ -71,25 +88,47 @@
 }
 
 .orangebg{
-    background-image: url('../images/AboutMebackground.png');
-    /* background-color: #e98b2d; */
+    background-color: #e98b2d
 }
 
 .orangehover:hover{
     color: #e98b2d;
 }
 
+.backgroundpattern{
+    background-image: url('../images/AboutMebackground.png');
+    /* background-color: #e98b2d; */
+}
+
+#graphicdesign{
+    position:absolute;
+    bottom: 48px
+}
+
+/* #webdevelopment{
+    position:absolute;
+    top: 48px
+} */
+
 .mainimage{
     /* position:absolute; */
-    background-size: cover;
-    max-width: 100%;
-    max-height: 100vw;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.mainlogo{
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    max-width: 40%;
 }
 
 .home{
-    position:relative;
-    z-index: -1;
-    max-height: 100vw;
+    /* object-position: fixed; */
+    position:relative; 
+     z-index: -1; 
+     max-height: 100vh;
 }
 
 .navbar{
@@ -118,14 +157,7 @@
 
 .bar{
     height: 20px;
-    background-color: #2f9583
-}
-
-.mainlogo{
-    position: absolute;
-    bottom: 7%;
-    left: 30%;
-    max-width: 40%;
+    /* background-color: #2f9583; */
 }
 
 .container{
@@ -136,7 +168,11 @@
     max-height: 350px;
     border-radius: 50%;
     max-width: 100%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+}
+
+.learnmore{
+    width:240px;
 }
 
 .roundedcorners{
@@ -144,35 +180,88 @@
 }
 
 .textoverflow{
-    text-overflow: ellipsis;
-    max-height: 350px;
-    overflow: hidden;
+    overflow: auto;
+    max-height: 425px;
+    transition: max-height 1s;
+    /* overflow: hidden; */
 }
 
-@media only screen and (max-width: 1350px){ 
+/* @media only screen and (max-width: 1350px){ 
     .aboutmeImage{
         max-height: 350px;
         border-radius: 50%;
         max-width: 100%;
         margin-left: 10%;
     }
-}
+} */
 
 @media only screen and (max-width: 770px){ 
     .aboutmeImage{
-        display: none;
+        display: none !important;
     }
 
-    .smallertext{
+    /* .smallertext{
         font-size:14px;
-    }
+    } */
 
     .emptybox{
         padding: 0px !important;
     }
+
 }
 
-@media only screen and (max-width: 1110px){ 
+@media only screen and (max-width: 1150px){
+    .textoverflow{
+        overflow: auto;
+        max-height: 390px;
+        /* overflow: hidden; */
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .textoverflow{
+        overflow: auto;
+        max-height: 335px;
+        /* overflow: hidden; */
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+    .textoverflow{
+        overflow: auto;
+        max-height: 270px;
+        /* overflow: hidden; */
+    }
+
+    .learnmore{
+        font-size: 20px !important;
+        width: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 775px){
+    .textoverflow{
+        overflow: auto;
+        max-height: 255px;
+        /* overflow: hidden; */
+    }
+
+
+}
+
+@media only screen and (max-width: 770px){
+    .textoverflow{
+        overflow: auto;
+        max-height: 350px;
+        /* overflow: hidden; */
+    }
+
+
+}
+
+/* @media only screen and (max-width: 1110px){ 
     .smallertext{
         font-size: 14px
     }
@@ -181,17 +270,29 @@
 @media only screen and (max-width: 950px){ 
     .smallertext{
         font-size: 12px
-    }
+    } */
+/* } */
+
+.sixteenpixelfont{
+    font-size: 16px;
 }
 
 .twentypixelfont{
     font-size:20px;
-
 }
 
 .thirtypixelfont{
     font-size:30px;
 }
+
+.thirtyeightpixelfont{
+    font-size:38px;
+}
+
+.lineheight85{
+    line-height: 85%;
+}
+
 
 @media only screen and (max-width: 800px){ 
     .thirtypixelfont{
@@ -242,6 +343,13 @@ a:hover{
     max-width: 50%;
 }
 
+.auxportfoliologo-pdm{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    max-width: 80%;
+}
+
 .grayscale:hover{
     filter: grayscale(100%);
 }
@@ -277,3 +385,53 @@ a:hover{
 .pointer{
     cursor: pointer
 }
+
+/* POSTS */
+
+.postmainimage{
+    object-fit: cover;
+    width: 100%;
+    max-height: 80vh;
+}
+
+.postmainlogo{
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    max-width: 70%;
+}
+
+.postmainlogo-pdm{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    max-width: 70%;
+}
+
+.posthome{
+    position:relative;
+    max-height: 100vh;
+}
+
+.test1{
+    position:fixed;
+    top:45px;
+    transition: 5s linear;
+}
+
+.postImg{
+    width:80%;
+    object-fit: contain;
+    object-position: 0 0;
+    height:100%;
+}
+
+@media only screen and (max-width: 770px){ 
+    .postImg{
+        width:95%;
+        object-fit: contain;
+        object-position: 0 0;
+        height:100%;
+    }
+}
+
