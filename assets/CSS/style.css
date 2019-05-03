@@ -408,6 +408,13 @@ a:hover{
     max-width: 70%;
 }
 
+.postmainlogo-ssl{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    max-width: 60%;
+}
+
 .posthome{
     position:relative;
     max-height: 100vh;
